@@ -240,21 +240,3 @@ func main() {
 
 	fmt.Println("\n📁 Збережено в: downloads/")
 }
-
-// 📥 ПАРАЛЕЛЬНИЙ DOWNLOADER
-// =========================
-// 📋 Завантажень: 6 | Воркерів: 3
-
-// 🚀 Worker 1,2,3 запущені
-// ⬇️ Worker 1: test_json.json
-// ⬇️ Worker 2: test_xml.xml
-// ✅ [Worker 1] test_json.json (0.5KB, 0.8s)
-// ⬇️ Worker 1: users.json
-// ✅ [Worker 2] test_xml.xml (1.2KB, 1.1s)
-// 🏁 Всі воркери завершили роботу
-
-// 📊 СТАТИСТИКА:
-// ✅ Успішно: 5 | ❌ Помилки: 1
-// 📦 Розмір: 12.3KB | ⚡ Швидкість: 8.2KB/s
-// 👷 Worker 1: 2 файли | Worker 2: 2 файли | Worker 3: 1 файл
-// 📁 Збережено в: downloads/
